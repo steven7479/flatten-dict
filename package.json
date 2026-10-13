@@ -1,7 +1,7 @@
 {
   "name": "flatten-dict",
-  "version": "0.1.0",
-  "description": "Turn nested dicts into flat keys—and back—using any separator.",
+  "version": "0.1.1",
+  "description": "Turn nested dicts into flat keys\u2014and back\u2014using any separator.",
   "type": "module",
   "main": "src/index.js",
   "exports": "./src/index.js",

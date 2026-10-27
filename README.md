@@ -46,3 +46,10 @@ does not appear in your keys.
 | `flatten`           | function | Nested object → flat keys.               |
 | `unflatten`         | function | Flat keys → nested object.               |
 | `DEFAULT_SEPARATOR` | string   | The default separator, `'.'`.            |
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
